@@ -1,18 +1,23 @@
 import React from 'react';
+import {NavLink} from 'react-router-dom';
 
 const Navigation = () => {
   return (
     <div>
-      <div className="App">
+      <div className='App'>
         <h1>React Router Mini</h1>
         <div>
-          <a href="">Home</a>
+          <NavLink to={'/'}>Home</NavLink>
         </div>
         <div>
-          <a href="">About</a>
+          <NavLink exact to={'/about'}>
+            About
+          </NavLink>
         </div>
         <div>
-          <a href="">Contact</a>
+          <NavLink exact to={'/contact'}>
+            Contact
+          </NavLink>
         </div>
       </div>
     </div>
